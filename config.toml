@@ -1,6 +1,6 @@
 # Page settings
-baseurl = "corelab.io"
-title = "CORE Lab"
+baseurl = "https://callab.github.io/"
+title = "Communication and Learning Lab"
 languageCode = "en-us"
 theme = "hugo-elate-theme"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
@@ -13,16 +13,16 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   custom_css = ["css/custom1.css", "css/custom2.css"]
 
   # Meta
-  author = "Richard A Klein"
-  description = "CORE Lab Homepage"
-  email = "h.ijzerman@gmail.com"
+  author = "Josef Klafka"
+  description = "CaLLab homepage"
+  email = "jklafka@andrew.cmu.edu"
   # Navigation
   [params.navigation]
-    brand = "CORE Lab"
-    home = "Home"
+    brand = "Communication and Learning Lab"
+    home = "Our Research"
     work = "Releases"
     testimonials = "Lab Friends" # I commented out this tab in partials/nav.html so it isn't displayed
-    services = "Opportunities"
+    services = "Join our lab!"
     about = "Lab Members" #Order of this one changed in layouts/partials/nav.html 
     contact = "Contact"
 
@@ -45,36 +45,42 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   
   # Hero section
   [params.hero]
-    title = "Co-Regulation (CORE) Lab."
-    subtitle = 'We study co-regulation in romantic relationships. We study social thermoregulation. We do meta-science. We rely on open science ideals. We collaborate with researchers around the world, but are located at the <a href="https://www.univ-grenoble-alpes.fr">Université Grenoble Alpes</a>.'
+    title = ""
+    subtitle = ''
  
   # Intro section
   # Available icons: http://simplelineicons.com/
   [params.intro]
+    description = """Young children learn the meanings of thousands of words by the time they can run down the street. The computational problem they solve is daunting: extracting discrete word forms from a sequence of continuous speech signals and mapping these forms onto their meanings. Yet, the same children who solve this problem continuously forget where they left their coats and hats. How do children learn language so quickly despite cognitive constraints on memory, attention, and information processing? <br> <br>
+                  Our work tries to resolve this puzzle by reframing language acquisition as a coordination problem. The problem is not how children learn language, but how parents and children construct it together. <br> <br> 
+                  We analyze this coordination by taking an end-to-end approach to understanding early language acquisition, studying it at multiple levels. Our first line of work investigates the representations and algorithms that children and adults bring to the learning problem. Our second line of work investigates the natural ecological contexts in which language acquisition occurs. Finally, our third line of work uses computational models to formalize the interactions between learner and environment. Successes and failures of language learning emerge from the match (or mismatch) between the learning mechanisms available to the child and the structure of the learning environment."""
 
   [[params.intro.item]]
-    title = "Papers"
-    description = "Check out publications and/or preprints from the lab. We ensure all our work is available to the public, so if you can't find a paper let us know!"
-    url = "https://osf.io/preprints/discover?provider=OSFORPsyArXiv&q=tags%3A(%22corelab%22)&sort=-date_updated" #Searches for OSF Preprints and PsyArXiv preprints, with the tag "corelab", sorted from most recent -> oldest.
-    button = "Access Papers"
-    icon = "icon-docs"
-    img = "papers.png"
+    title = "Experimental Studies"
+#    description = "Check out publications and/or preprints from the lab. We ensure all our work is available to the public, so if you can't find a paper let us know!"
+#    url = "https://osf.io/preprints/discover?provider=OSFORPsyArXiv&q=tags%3A(%22corelab%22)&sort=-date_updated" #Searches for OSF Preprints and PsyArXiv preprints, with the tag "corelab", sorted from most recent -> oldest.
+#    button = "Access Papers"
+    icon = "icon-speech"
+    img = "ipad_task.jpg"
 
   [[params.intro.item]]
-    title = "Open Data/Materials"
-    description = "To the extent possible we make materials, data, and analysis scripts publicly available on the Open Science Framework. These may be used for re-analysis or for novel hypotheses."
-    url = 'https://osf.io/search/?q=tags:(corelabdat)&page=1' #Searches for projects tagged "corelabdat".
-    button = "Find our datasets"
-    icon = "icon-folder"
-    img = "COS-Logo-small-1.png"
+    title = "Naturalistic Observation"
+#    description = "To the extent possible we make materials, data, and analysis scripts publicly available on the Open Science Framework. These may be used for re-analysis or for novel hypotheses."
+#    url = 'https://osf.io/search/?q=tags:(corelabdat)&page=1' #Searches for projects tagged "corelabdat".
+#    button = "Find our datasets"
+    icon = "icon-magnifier-add"
+    img = "toy_play.png"
 
   [[params.intro.item]]
-    title = "Lab Philosophy"
-    description = "Doing science is really hard. Here, we document the workflow of the lab and expectations for lab members. Includes templates for OSF projects to make open science easier."
-    url = "https://docs.google.com/document/d/1aZWfCIReB9goSiEQcYQGWj70R0NXfQ0cOWKWa3julcA/edit?usp=sharing" #the file is under /content/
-    button = "Download"
-    icon = "icon-bulb"
-    img = "doors.jpg"
+    title = "Computational Models"
+#    description = "Doing science is really hard. Here, we document the workflow of the lab and expectations for lab members. Includes templates for OSF projects to make open science easier."
+#    url = "https://docs.google.com/document/d/1aZWfCIReB9goSiEQcYQGWj70R0NXfQ0cOWKWa3julcA/edit?usp=sharing" #the file is under /content/
+#    button = "Download"
+    icon = "icon-graph"
+    img = "lba_mod.png"
+    
+  [param.intro.text]
+    text = "hello world"
 
   [params.intro.news] #did some heavy editing of params/intro.html to add this section
     enable = false
@@ -99,7 +105,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 # Can remove entirely by deleting this line from work.html: <img src="images/{{ .category }}" class="img-responsive">
 
   [params.work]
-    enable = true
+    enable = false
     title = "Releases"
     description = "Here are recent projects we've completed."
     footertext = "We're working on a page for achived projects. We'll link those here when it's ready."
@@ -197,83 +203,75 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   [params.about]
     enable = true
     title = "Lab Members"
-    footertext = '<big>Former members:</big> <a href="https://osf.io/n75jp/">Lison Neyroud</a>, <a href="http://armelsoubeiga.ga/">Armel Soubeiga</a>, Justin Mah, <a href="https://github.com/souabniMehdi">Mehdi Souabni</a>, <a href="https://osf.io/qetx7/">Nazanin Kafaee</a>, <a href="https://www.researchgate.net/profile/Elisa_Sarda">Elisa Sarda</a>.'
+#    footertext = '<big>Former members:</big> <a href="https://osf.io/n75jp/">Lison Neyroud</a>, <a href="http://armelsoubeiga.ga/">Armel Soubeiga</a>, Justin Mah, <a href="https://github.com/souabniMehdi">Mehdi Souabni</a>, <a href="https://osf.io/qetx7/">Nazanin Kafaee</a>, <a href="https://www.researchgate.net/profile/Elisa_Sarda">Elisa Sarda</a>.'
 #    description = ""
 
   [[params.about.item]]
-    name = '<a href="http://www.hansijzerman.org/">Hans IJzerman</a>'  
+    name = '<a href="http://www.thoughtfill.com/">Daniel Yurovsky</a>'  
     position = 'Principal Investigator'  
-    description = "PhD in Social Psychology from Utrecht University and Associate Professor at UGA. Directs lab strategy."  
-    img = "Hans 2.png"  # 300x300 images in themes/hugo-elate-theme/static/images/
-    alt = "hans"  
+    description = "Dan was an undergrad computer science major at Carnegie Mellon before completing a PhD in Cognitive Psychology at Indiana University and doing a postdoc in Psych Department at Stanford. He is broadly interested in how we learn from the people around us, and especially how children learn language. Dan is excited about understanding communication and learning from a systems perspective."  
+    img = "yurovsky.jpg"  # 300x300 images in themes/hugo-elate-theme/static/images/
+    alt = "DanYurovsky"  
     social = [
-      ["icon-globe", "http://www.hansijzerman.org/"],
-      ["icon-folder", "https://osf.io/3hsfj/"],
-      ["icon-google", "https://scholar.google.com/citations?user=KC7FG9QAAAAJ"],        
-      ["icon-twitter", "https://twitter.com/hansijzerman"]
+      ["icon-globe", "http://www.thoughtfill.com"],
+      ["icon-folder", "https://osf.io/yaxc8/"],
+      ["icon-google", "https://scholar.google.com/citations?user=DYSp4-kAAAAJ&hl"],        
+      ["icon-twitter", "https://twitter.com/danyurovsky"],
+      ["icon-github", "https://github.com/dyurovsky"]
     ]  
 
   [[params.about.item]]
-    name = '<a href="https://raklein.me/">Richard Klein</a>'
-    position = "Postdoc"
-    description = "PhD in Social Psychology from the University of Florida. Handles complex datasets and performs statistical analyses."
-    img = "klein.cos.photo.jpg"
-    alt = "RichardKlein"
+    name = '<a href="https://jklafka.github.io/">Josef Klafka</a>'
+    position = "Lab Manager"
+    description = "Joe did his undergrad at UChicago in math and linguistics. He is interested in how children learn new words and grammar, and applications to machine learning."
+    img = "klafka.jpg"
+    alt = "JosefKlafka"
     social = [
-      ["icon-globe", "https://raklein.me/"],
-      ["icon-folder", "https://osf.io/tmwry/"],
-      ["icon-google", "https://scholar.google.com/citations?user=wxW6e0sAAAAJ"],
-      ["icon-twitter", "https://twitter.com/raklein3"],
-      ["icon-github", "https://github.com/raklein"]
+      ["icon-globe", "https://jklafka.github.io/"],
+      ["icon-twitter", "https://twitter.com/josefklafka"],
+      ["icon-github", "https://github.com/jklafka"]
     ]     
     
 # Below used to bug out after 5 people, I think I fixed it in about.html though
     [[params.about.item]]
-      name = '<a href="https://www.researchgate.net/profile/Patrick_Forscher">Patrick Forscher</a>'
-      position = "Postdoc"
-      description = "Assistant Professor at the University of Arkansas. Joins the lab to find funding sources for the Psychological Science Accelerator."
-      img = "Patrick.png"
+      name = 'Claire Bergey'
+      position = "PhD Student"
+      description = "Claire is a third-year PhD student in the Cognition program at the University of Chicago. She studied psychology and cognitive science at Williams College. She is interested in language and category acquisition."
+      img = "bergey.jpg"
       alt = "Patrick"
       social = [
         ["icon-globe", "https://www.researchgate.net/profile/Patrick_Forscher"],
-        ["icon-folder", "https://osf.io/eff4m/"],
-        ["icon-google", "https://scholar.google.com/citations?user=lEXTftIAAAAJ&hl=en"],
-        ["icon-twitter", "https://twitter.com/psforscher"]
       ]
 
     [[params.about.item]]
-      name = '<a href="https://www.researchgate.net/profile/Alessandro_Sparacio">Alessandro Sparacio</a>'
+      name = 'Ashley Leung'
       position = "PhD Student"
-      description = "MA in Psychology from the University of Milano-Bicocca. Joins the lab for his PhD, and will work on stress regulation processes."
-      img = "alessandro.png"
+      description = "Ashley is a second-year PhD student in Psychology at the University of Chicago. She graduated from Middlebury College with a BA in Psychology and English & American Literatures. She is broadly interested in child language acquisition, and she is currently studying how parent-child communication influences language learning."
+      img = "leung.jpg"
       alt = "Alessandro"
       social = [
         ["icon-globe", "https://www.researchgate.net/profile/Alessandro_Sparacio"]
       ]
-
+      
     [[params.about.item]]
-      name = '<a href="">Martin Oudart</a>'
-      position = "Intern"
-      description = "Sc.B in medicine at UGA. Joins the lab as an MSc intern and will explore links between social attachment and menopausal hot flashes."
-      img = "blank.png"
-      alt = "blank"
+      name = 'Benjamin Morris'
+      position = "PhD Student"
+      description = "Ben received his Masters in Developmental Psychology at the University of Cambridge working with Claire Hughes. Ben has a B.A. in Psychology from Reed College, where he worked with Jennifer Corpus. He is primarily interested in optimal word learning strategies and their connection to early cognitive development."
+      img = "morris.jpg"
+      alt = "Ben"
       social = [
-        ["icon-globe", ""]
+        ["icon-globe", "https://www.researchgate.net/profile/Alessandro_Sparacio"]
       ]
-
-  [[params.about.item]]
-    name = '<a href="https://www.researchgate.net/profile/Olivier_Dujols2">Olivier Dujols</a>'
-    position = "PhD Student"
-    description = "MA in Social Psychology at UGA. Joins the lab for his PhD, and will work on social thermoregulation and co-regulation."
-    img = "OlivierDujols.png"
-    alt = "OlivierDujols"
-    social = [
-      ["icon-globe", "https://www.researchgate.net/profile/Olivier_Dujols2"],
-      ["icon-folder", "https://osf.io/bc79d"],
-      ["icon-twitter", "https://twitter.com/OlivierDujols"],
-      ["icon-github", "https://github.com/DujolsOlivier"]
-    ]   
-
+      
+    [[params.about.item]]
+      name = 'Alexandra Tunkel'
+      position = "Honors Thesis Student"
+      description = "Alexandra is a fourth-year undergraduate at the University of Chicago, double majoring in Biology and Psychology. She is interested in the application of these two fields in child development."
+      img = "tunkel.jpg"
+      alt = "Ben"
+      social = [
+        ["icon-globe", "https://www.researchgate.net/profile/Alessandro_Sparacio"]
+      ]
 
   # Testimonials section
   # I edited partials/testimonials.html to remove the quotes and change this to a friends-of-lab section.
@@ -283,169 +281,46 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
   [params.testimonials]
     enable = true
-    title = "Friends of the lab"
+    title = "Lab Alumni"
 
     [[params.testimonials.item]]
-      person = '<a href="https://jamescoan.com/">Jim Coan</a><br> University of Virginia'
-      img = "jimcoan.jpeg" 
-      alt = "jimcoan" # This is just text that gets displayed if the img file fails to load
-
-    [[params.testimonials.item]]
-      person = '<a href="https://cals.arizona.edu/fcs/faculty/emily_butler">Emily Butler</a><br> University of Arizona'
-      img = "butler.jpeg"
-      alt = "butler"
-
-    [[params.testimonials.item]]
-      person = '<a href="https://www.su.se/english/profiles/tamm-1.182300">Maria Koptjesvakaja-Tamm</a><br> Stockholm University'
-      img = "tamm.jpeg"
-      alt = "tamm"
-
-    [[params.testimonials.item]]
-      person = '<a href="http://julianneholtlunstad.byu.edu/">Julianne Holt-Lunstad</a><br> Brigham Young University'
-      img = "holtlunstad.jpeg"
-      alt = "holtlunstad"
-
-    [[params.testimonials.item]]
-      person = '<a href="http://www.ru.nl/english/people/hasselman-f/">Fred Hasselman</a><br>Radboud University Nijmegen'
-      img = "hasselman.jpg"
-      alt = "hasselman"
-
-    [[params.testimonials.item]]
-      person = '<a href="http://www.kateratliff.com/">Kate Ratliff</a><br>University of Florida'
-      img = "ratliff.jpeg"
-      alt = "ratliff"
-
-    [[params.testimonials.item]]
-      person = '<a href="https://psysciacc.org/">Psych Science Accelerator</a><br>Worldwide Collaboration'
-      img = "psa.png"
-      alt = "psa"
-
-    [[params.testimonials.item]]
-      person = '<a href="https://psychology.as.virginia.edu/people/profile/cre2am">Charlie Ebersole</a><br>University of Virginia'
-      img = "ebersole.jpg"
-      alt = "ebersole"
-
-    [[params.testimonials.item]]
-      person = '<a href="https://www.tilburguniversity.edu/webwijs/show/j.j.a.denissen.htm">Jaap Denissen</a><br>Tilburg University'
-      img = "denissen.jpg"
-      alt = "denissen"
-
-    [[params.testimonials.item]]
-      person = '<a href="http://lindenberg.academiaworks.com/">Sigi Lindenberg</a><br>Rijksuniversiteit Groningen'
-      img = "lindenberg.jpeg"
-      alt = "lindenberg"
-
-    [[params.testimonials.item]]
-      person = '<a href="https://sites.google.com/site/michelangelovianello/">Michelangelo Vianello</a><br>University of Padova'
-      img = "vianello.jpeg"
-      alt = "vianello"
-
-    [[params.testimonials.item]]
-      person = '<a href="https://www.anthro.ucla.edu/faculty/alan-page-fiske">Alan Fiske</a><br>University of California, LA'
-      img = "fiske.jpg"
-      alt = "fiske"
-
-    [[params.testimonials.item]]
-      person = '<a href="http://iropovik.github.io">Ivan Ropovik</a><br>University of Presov'
-      img = "ropovik.jpg"
-      alt = "ropovik"
+      person = '<a href="https://jamescoan.com/">Xiuyuan Flora Zhang</a><br> Yale University'
+      img = "zhang.jpg" 
+      alt = "flora" # This is just text that gets displayed if the img file fails to load]
       
-# I shortened the description for in-mind -- longer descriptions seem to mess up the formatting in this section      
-      [[params.testimonials.item]] 
-      person = '<a href="http://www.in-mind.org">In-Mind Foundation</a><br>Popular Psychology Journal'
-      img = "inmind.png"
-      alt = "inmind"
+    [[params.testimonials.item]]
+      person = '<a href="https://jamescoan.com/">Madeline Meyers</a><br> Stanford University'
+      img = "maddie.jpg" 
+      alt = "maddie" # This is just text that gets displayed if the img file fails to load
       
-      [[params.testimonials.item]] 
-      person = '<a href="https://research.vu.nl/en/persons/paula-sterkenburg">Paula Sterkenburg</a><br>Vrije Universiteit Amsterdam'
-      img = "Paula_Sterkenburg.jpg"
-      alt = "sterkenburg"
+    [[params.testimonials.item]]
+      person = '<a href="https://jamescoan.com/">Yawen Yu</a><br> University of California, Los Angeles'
+      img = "yu.jpg" 
+      alt = "yawen" # This is just text that gets displayed if the img file fails to load
       
-      [[params.testimonials.item]] 
-      person = '<a href="http://www.tilapronk.nl/">Tila Pronk</a><br>Tilburg University'
-      img = "pronk.jpg"
-      alt = "pronk"
-      
-      [[params.testimonials.item]] 
-      person = '<a href="http://english.telhai.ac.il/content/prof-yizhar-lavner">Yizhar Lavner</a><br>Tel Hai College'
-      img = "lavner2.jpg"
-      alt = "lavner"
-      
-      [[params.testimonials.item]] 
-      person = '<a href="http://emotionregulationlab.com/?page_id=41">Mattie Tops</a><br>Vrije Universiteit Amsterdam'
-      img = "tops.jpeg"
-      alt = "tops"
-      
-    [[params.testimonials.item]] 
-      person = '<a href="https://www.projectimplicit.net/nosek/">Brian Nosek</a><br>Center for Open Science'
-      img = "nosek.jpeg"
-      alt = "nosek"
+    [[params.testimonials.item]]
+      person = '<a href="https://jamescoan.com/">Emmi Russo</a><br> Microsoft'
+      img = "emmi.jpg" 
+      alt = "emmi" # This is just text that gets displayed if the img file fails to load
+
+
 
   # Services section
   # Note: The description lengths below need to be roughly equal or the formatting will get messed up.
   [params.services]
     enable = true
-    title = "Opportunities/Openings"
-    description = "We sometimes have job openings at the lab. In the meantime, if you are interested in working with us, there are various grants you can receive and where we can support you in writing. We have posted some of these below and will update as we learn about more. We work in English, but we also invite French (or other) speakers who want to improve their English."
+    title = "Join our lab!"
+    description = "We are always looking for motivated, passionate students and researchers to join our team. Please contact us if you have any questions about our work!"
+
 
     [[params.services.item]]
-      title = "Internships"
-      description = "We welcome interns from fields like psychology, computer science, statistics, or others. We currently have several students scheduled for 8-week visits."
+      title = "Research Assistants"
+      description = "Undergraduate Opportunities: The Communication and Learning Lab has openings for undergraduates to gain research experience working as RAs. As a research assistant in CaLLab, you could be involved in research at every step of the process, from developing research questions and creating stimuli to recruiting subjects and testing participants. If you would like to hear more about working as an RA, please contact our lab manager Joe (jklafka [at] andrew [dot] cmu [dot] edu). "
       icon = "icon-graduation"
 
     [[params.services.item]]
-      title = '<a href = "https://ec.europa.eu/research/mariecurieactions/actions/get-funding_en">Postdoc Grant - Marie Curie</a>'
-      description = "The Marie Curie grant is an excellent opportunity for scholars outside of France wanting to come to France. Topic is flexible and various grants are available."
-      icon = "icon-graduation"
-
-      [[params.services.item]]
-      title = '<a href = "https://www.campusfrance.org/en/PRESTIGE-programme-postdoc">Postdoc Grant - Prestige</a>'
-      description = "The Prestige grant is an excellent opportunity, but needs cofinancing from another source. Deadlines throughout the year"
-      icon = "icon-graduation"
-
-      [[params.services.item]]
-      title = '<a href = "http://training.iarc.fr/en/fellowships/postdoc.php">Postdoc Grant - International Agency for Research on Cancer</a>'
-      description = "In our papers, we have written about links between cancer and thermoregulation. There are good reasons to suppose a link. This grant could support such research. Currently closed, but may reopen"
-      icon = "icon-graduation"
-
-      [[params.services.item]]
-      title = '<a href = "http://www.fondationfyssen.fr/en/study-grants/aim-award/">Postdoc Grant - Fondation Fyssen</a>'
-      description = "The Prestige grant is an excellent opportunity, but needs cofinancing from another source. Only open to researchers outside of France. Deadline closed for this year"
-      icon = "icon-graduation"
-
-      [[params.services.item]]
-      title = '<a href = "https://www.campusfrance.org/en/make-our-planet-great-again-en">Make Our Planet Great Again</a>'
-      description = "Want to study thermoregulation and climate change? The French government has heavily invested in research countering climate change. Different grants available"
-      icon = "icon-graduation"
-
-      [[params.services.item]]
-      title = '<a href = "http://www.fundit.fr/en/institutions/china-scholarship-council-csc">China Scholarship Council</a>'
-      description = "From China and want to come work with us in France? The CSC has various grants available for Chinese scholars"
-      icon = "icon-graduation"
-
-      [[params.services.item]]
-      title = '<a href = "http://fulbright-france.org/en">Fullbright Scholarships</a>'
-      description = "US Scholar and want to come work with us in France (if only for a few months)? Fullbright has various opportunities at various level of your career"
-      icon = "icon-graduation"
-
-      [[params.services.item]]
-      title = '<a href = "http://dwih.com.br/en/brazil-research-funding">Brazilian Scholarships</a>'
-      description = "Brazilian Scholar and want to come work with us in France (if only for a few months)? There are various scholarships available (and we speak some Portuguese too!)"
-      icon = "icon-graduation"
-
-      [[params.services.item]]
-      title = '<a href = "https://twitter.com/digitalsci/status/878689381602791424">Software Grants</a>'
-      description = "We are working on developing tech (deep learning, app development. Various grants are available for this. The Catalyst grant is but one example. Get in touch to see how we can cooperate!"
-      icon = "icon-graduation"
-
-      [[params.services.item]]
-      title = '<a href = "https://www.communaute-univ-grenoble-alpes.fr/fr/presentation/le-projet-idex/appels-a-projets-idex/international-strategic-partnerships-session-2017-2018-692405.htm">IDEX Grants</a>'
-      description = "The Initiative d'Excellence (of which UGA is a part) offers opportunities for various strategic partners (including in Brazil, US, Canada, Japan, Singapore, Mexico, Senegal, Taiwan, and Morocco. Get in touch to explore with us"
-      icon = "icon-graduation"
-
-      [[params.services.item]]
-      title = '<a href = "https://grants.nih.gov/grants/guide/pa-files/PAR-13-146.html">National Cancer Institute Exploratory Grant</a>'
-      description = "In our papers, we have written about links between cancer and thermoregulation. There are good reasons to suppose a link. This grant could support such research."
+      title = "Graduate Students"
+      description = 'Interested in graduate study at the Carnegie Mellon? Visit the <a href="https://www.cmu.edu/dietrich/psychology/">Psychology Department page</a> for more information on graduate programs offered here and the application process. Please contact Professor Yurovsky (dry [at] andrew [dot] cmu [dot] edu) if you are interested in pursuing graduate research in the Communication and Learning Lab.'
       icon = "icon-graduation"
 
   # Counters section
@@ -492,14 +367,14 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     map = true 
     form = true
     title = "Get in touch"
-    description = "If you're interested in a position in the lab, contact us! You can work on co-regulation or social thermoregulation in combination with your own topic (e.g., computational modelling, motivation, et cetera). In your contact request, please include why you are interested in working on concepts related to thermoregulation/co-regulation. Please also include: </li><li>Which opportunity (e.g., grant) you're interested in.</li><li>Current academic/professional status.</li><li>A brief statement about your commitment to open science.</li>"
+    description = ""
     
     # Available icons: http://simplelineicons.com/
     details = [
-        ["icon-home", "Université Grenoble Alpes <br> BP 47 - 38040 GRENOBLE Cedex 9 <br> FRANCE"],
+        ["icon-home", "5000 Forbes Ave <br> Pittsburgh, PA 15213"],
 #        ["icon-phone", "(123) 465-6789"],
-        ["icon-envelope", "h.ijzerman@gmail.com"],
-        ["icon-globe", '<a href="https://corelab.io" target="_blank">Corelab.io</a>']
+        ["icon-envelope", "callab@andrew.cmu.edu"],
+        ["icon-globe", '<a href="https://callab.github.io" target="_blank">CaLLab website</a>']
       ]
 
     name = "Name"

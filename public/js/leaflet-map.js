@@ -1,7 +1,7 @@
 function initMap() {
-    var latLong = [45.193141, 5.773213]; // Grenoble
+    var latLong = [40.442473, -79.944795]; // CMU
 
-    var map = L.map("map").setView(latLong, 6);
+    var map = L.map("map").setView(latLong, 14);
 
     L.tileLayer("https://b.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',

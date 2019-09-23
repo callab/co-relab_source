@@ -1,6 +1,6 @@
 	<section id="fh5co-intro">
 		<div class="container">
-			<div class="row row-bottom-padded-lg">
+			<div class="row row-bottom-padded-lg col-md-offset-1">
 				{{ range .Site.Params.intro.item }}
 				<div class="fh5co-block to-animate" style="background-image: url(images/{{ .img }});">
 					<div class="overlay-darker"></div>
@@ -9,11 +9,18 @@
 						<i class="fh5co-intro-icon {{ .icon }}"></i>
 						<h2>{{ .title }}</h2>
 						<p>{{ .description }}</p>
-						<p><a href="{{ .url }}" class="btn btn-primary">{{ .button}}</a></p>
+					<!--	<p><a href="{{ .url }}" class="btn btn-primary">{{ .button}}</a></p> -->
 					</div>
 				</div>
 				{{ end }}
 			</div>
+
+
+		<div class="col-md-12 to-animate">
+							<h3>{{ with .Site.Params.intro.description }}{{ . | markdownify }}{{ end }}</h3>
+		</div>
+
+
 
 			{{ if .Site.Params.intro.news.enable }}
 			<div class="row watch-video text-center to-animate">
