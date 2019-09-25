@@ -9,7 +9,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 # Adjust transparency in style.css (search 'opacity:')
 
 [params]
-  
+
   custom_css = ["css/custom1.css", "css/custom2.css"]
 
   # Meta
@@ -23,12 +23,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     work = "Releases"
     testimonials = "Lab Friends" # I commented out this tab in partials/nav.html so it isn't displayed
     services = "Join our lab!"
-    about = "Lab Members" #Order of this one changed in layouts/partials/nav.html 
+    about = "Lab Members" #Order of this one changed in layouts/partials/nav.html
     contact = "Contact"
 
     # You can add custom links before or after the default links
     # Assign a weight to define the order
-    
+
     # prepended links
 #    [[menu.prepend]]
 #      url = "http://gohugo.io"
@@ -41,18 +41,18 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     #  name = "External link"
     #  weight = 10
 
-# Can edit the order of components in layouts/index.html, and menu order in layouts/partials/nav.html  
-  
+# Can edit the order of components in layouts/index.html, and menu order in layouts/partials/nav.html
+
   # Hero section
   [params.hero]
     title = ""
     subtitle = ''
- 
+
   # Intro section
   # Available icons: http://simplelineicons.com/
   [params.intro]
     description = """Young children learn the meanings of thousands of words by the time they can run down the street. The computational problem they solve is daunting: extracting discrete word forms from a sequence of continuous speech signals and mapping these forms onto their meanings. Yet, the same children who solve this problem continuously forget where they left their coats and hats. How do children learn language so quickly despite cognitive constraints on memory, attention, and information processing? <br> <br>
-                  Our work tries to resolve this puzzle by reframing language acquisition as a coordination problem. The problem is not how children learn language, but how parents and children construct it together. <br> <br> 
+                  Our work tries to resolve this puzzle by reframing language acquisition as a coordination problem. The problem is not how children learn language, but how parents and children construct it together. <br> <br>
                   We analyze this coordination by taking an end-to-end approach to understanding early language acquisition, studying it at multiple levels. Our first line of work investigates the representations and algorithms that children and adults bring to the learning problem. Our second line of work investigates the natural ecological contexts in which language acquisition occurs. Finally, our third line of work uses computational models to formalize the interactions between learner and environment. Successes and failures of language learning emerge from the match (or mismatch) between the learning mechanisms available to the child and the structure of the learning environment."""
 
   [[params.intro.item]]
@@ -78,7 +78,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 #    button = "Download"
     icon = "icon-graph"
     img = "lba_mod.png"
-    
+
   [param.intro.text]
     text = "hello world"
 
@@ -86,7 +86,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     enable = false
     title = "Announcements"
     description = '&bull; Find slides and presentations from our recent Open Science workshop in Bordeaux <a href="https://osf.io/gvkxn/">here</a>.<br>&bull; We sent off three members of the lab who have completed very successful internships: Justin, Armel, and Mehdi. <br>&bull; Hans IJzerman has signed a contract with <a href="https://en.wikipedia.org/wiki/W._W._Norton_%26_Company">WW Norton</a> to write a popular science book on thermoregulation in social relationships<br>&bull; <a href="https://psyarxiv.com/785qu/">Last submitted manuscript</a> was for the Psych Science Accelerator'
-    
+
 # Above description is less tidy than the rest because I hacked it in to the intro. Will try to tidy it later.
 
   [params.intro.video]
@@ -116,7 +116,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
       alt = "Workflow Update"
       title = "Annual Workflow Update"
       subtitle = "9/2019 - We've released the 2019 update to our lab philosophy/workflow. Key changes: Sprints, CRediT contributorship, code hygeine."
-      url = "https://docs.google.com/document/d/1aZWfCIReB9goSiEQcYQGWj70R0NXfQ0cOWKWa3julcA/edit?usp=sharing" 
+      url = "https://docs.google.com/document/d/1aZWfCIReB9goSiEQcYQGWj70R0NXfQ0cOWKWa3julcA/edit?usp=sharing"
 
     [[params.work.row]]
       category = "conference.png"
@@ -124,7 +124,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
       alt = "Tech and Relationships"
       title = "Tech and Relationships Conference"
       subtitle = "5/2019 - We're organizing an EASP conference and Facebook+AdopteUnMec Hackathon in Annecy, France."
-      url = "https://www.techandrelationships.org" 
+      url = "https://www.techandrelationships.org"
 
     [[params.work.row]]
       category = "education.png"
@@ -132,7 +132,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
       alt = "Open Science Workshop"
       title = "Open Science Workshop"
       subtitle = "4/2019 - We're giving a workshop on the Open Science Framework, and a deep dive on power analysis."
-      url = "https://osf.io/gvkxn/"       
+      url = "https://osf.io/gvkxn/"
 
     [[params.work.row]]
       category = "publication.png"
@@ -140,7 +140,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
       alt = "ml2 image"
       title = "Many Labs 2"
       subtitle = "12/2018 - 135 labs around the world replicate 28 studies. Find minimal variation in results depending on the sample."
-      url = "https://journals.sagepub.com/doi/10.1177/2515245918810225" 
+      url = "https://journals.sagepub.com/doi/10.1177/2515245918810225"
 
     [[params.work.row]]
       category = "preprint.png"
@@ -148,7 +148,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
       alt = "straq-1"
       title = "STRAQ-1"
       subtitle = "10/2018 - Developing a scale to measure individual differences in social thermoregulation."
-      url = "https://psyarxiv.com/6b7ne" 
+      url = "https://psyarxiv.com/6b7ne"
 
     [[params.work.row]]
       category = "education.png"
@@ -156,7 +156,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
       alt = "Solid Science"
       title = "Solid Science Training Workshop"
       subtitle = "9/2018 - We organized a workshop training scientists on doing reproducible, open science. Videos and materials available on the OSF."
-      url = "https://osf.io/gvkxn/" 
+      url = "https://osf.io/gvkxn/"
 
     [[params.work.row]]
       category = "publication.png"
@@ -164,7 +164,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
       alt = "Penguins Image"
       title = "Human Penguin Project"
       subtitle = "9/2018 - International collaboration investigating the link between social environment and core body temperature."
-      url = "https://psyarxiv.com/6b7ne" 
+      url = "https://psyarxiv.com/6b7ne"
 
     [[params.work.row]]
       category = "publication.png"
@@ -181,7 +181,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
       title = "Oxford Bibliography Guide"
       subtitle = "5/2018 - Two of our researchers participated in a collaboration to write an Oxford Bibliography on replication initiatives in psychology."
       url = "https://psyarxiv.com/h5jm7/"
-      
+
 #    [[params.work.row]]
 #      category = "publication.png"
 #      img = "transparency.jpg"
@@ -189,7 +189,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 #      title = "Transparency Guide"
 #      subtitle = "6/2018 - One of our researchers participated in a collaboration to write a practical guide for more transparent science."
 #      url = "https://psyarxiv.com/rtygm"
-      
+
 #    [[params.work.row]]
 #      category = "preprint.png"
 #      img = "stroopml.png"
@@ -207,18 +207,18 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 #    description = ""
 
   [[params.about.item]]
-    name = '<a href="http://www.thoughtfill.com/">Daniel Yurovsky</a>'  
-    position = 'Principal Investigator'  
-    description = "Dan was an undergrad computer science major at Carnegie Mellon before completing a PhD in Cognitive Psychology at Indiana University and doing a postdoc in Psych Department at Stanford. He is broadly interested in how we learn from the people around us, and especially how children learn language. Dan is excited about understanding communication and learning from a systems perspective."  
+    name = '<a href="http://www.thoughtfill.com/">Daniel Yurovsky</a>'
+    position = 'Principal Investigator'
+    description = "Dan was an undergrad computer science major at Carnegie Mellon before completing a PhD in Cognitive Psychology at Indiana University and doing a postdoc in Psych Department at Stanford. He is broadly interested in how we learn from the people around us, and especially how children learn language. Dan is excited about understanding communication and learning from a systems perspective."
     img = "yurovsky.jpg"  # 300x300 images in themes/hugo-elate-theme/static/images/
-    alt = "DanYurovsky"  
+    alt = "DanYurovsky"
     social = [
       ["icon-globe", "http://www.thoughtfill.com"],
       ["icon-folder", "https://osf.io/yaxc8/"],
-      ["icon-google", "https://scholar.google.com/citations?user=DYSp4-kAAAAJ&hl"],        
+      ["icon-google", "https://scholar.google.com/citations?user=DYSp4-kAAAAJ&hl"],
       ["icon-twitter", "https://twitter.com/danyurovsky"],
       ["icon-github", "https://github.com/dyurovsky"]
-    ]  
+    ]
 
   [[params.about.item]]
     name = '<a href="https://jklafka.github.io/">Josef Klafka</a>'
@@ -230,8 +230,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
       ["icon-globe", "https://jklafka.github.io/"],
       ["icon-twitter", "https://twitter.com/josefklafka"],
       ["icon-github", "https://github.com/jklafka"]
-    ]     
-    
+    ]
+
 # Below used to bug out after 5 people, I think I fixed it in about.html though
     [[params.about.item]]
       name = 'Claire Bergey'
@@ -252,7 +252,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
       social = [
         ["icon-globe", "https://www.researchgate.net/profile/Alessandro_Sparacio"]
       ]
-      
+
     [[params.about.item]]
       name = 'Benjamin Morris'
       position = "PhD Student"
@@ -262,7 +262,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
       social = [
         ["icon-globe", "https://www.researchgate.net/profile/Alessandro_Sparacio"]
       ]
-      
+
     [[params.about.item]]
       name = 'Alexandra Tunkel'
       position = "Honors Thesis Student"
@@ -285,22 +285,22 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
     [[params.testimonials.item]]
       person = '<a href="https://jamescoan.com/">Xiuyuan Flora Zhang</a><br> Yale University'
-      img = "zhang.jpg" 
+      img = "zhang.jpg"
       alt = "flora" # This is just text that gets displayed if the img file fails to load]
-      
+
     [[params.testimonials.item]]
       person = '<a href="https://jamescoan.com/">Madeline Meyers</a><br> Stanford University'
-      img = "maddie.jpg" 
+      img = "maddie.jpg"
       alt = "maddie" # This is just text that gets displayed if the img file fails to load
-      
+
     [[params.testimonials.item]]
       person = '<a href="https://jamescoan.com/">Yawen Yu</a><br> University of California, Los Angeles'
-      img = "yu.jpg" 
+      img = "yu.jpg"
       alt = "yawen" # This is just text that gets displayed if the img file fails to load
-      
+
     [[params.testimonials.item]]
       person = '<a href="https://jamescoan.com/">Emmi Russo</a><br> Microsoft'
-      img = "emmi.jpg" 
+      img = "emmi.jpg"
       alt = "emmi" # This is just text that gets displayed if the img file fails to load
 
 
@@ -320,7 +320,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
     [[params.services.item]]
       title = "Graduate Students"
-      description = 'Interested in graduate study at the Carnegie Mellon? Visit the <a href="https://www.cmu.edu/dietrich/psychology/">Psychology Department page</a> for more information on graduate programs offered here and the application process. Please contact Professor Yurovsky (dry [at] andrew [dot] cmu [dot] edu) if you are interested in pursuing graduate research in the Communication and Learning Lab.'
+      description = 'Interested in graduate study at the Carnegie Mellon? Visit the Psychology Department page <a href="https://www.cmu.edu/dietrich/psychology/">here</a> for more information on graduate programs offered and the application process. Please contact Professor Yurovsky (dry [at] andrew [dot] cmu [dot] edu) if you are interested in pursuing graduate research in the Communication and Learning Lab.'
       icon = "icon-graduation"
 
   # Counters section
@@ -364,11 +364,11 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   # Contact section
   [params.contact]
     enable = true
-    map = true 
+    map = true
     form = true
     title = "Get in touch"
     description = ""
-    
+
     # Available icons: http://simplelineicons.com/
     details = [
         ["icon-home", "5000 Forbes Ave <br> Pittsburgh, PA 15213"],
